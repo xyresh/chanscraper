@@ -36,7 +36,7 @@ void stdDownload(std::string URL){
   const char * command = cmd.c_str();
   printf("\nDownloading Files ...\n\n");
   system(command);
-  printf("Files save in <your home folder>/chanscrapes");
+  printf("\nFiles save in <your home folder>/chanscrapes\n");
 }
 
 
@@ -46,9 +46,9 @@ void cDirDownload(std::string URL,std::string cDir)
   cmd += cDir+" -nd -r -l 1 -H -D i.4cdn.org -A png,gif,jpg,jpeg,webm  "+URL;
   const char * command = cmd.c_str();
   const char * dir = cDir.c_str();
-  printf("Downloading Files ...");
+  printf("\nDownloading Files ...\n\n");
   system(command);
-  printf("Files saved at %s",dir);
+  printf("\nFiles saved at %s\n",dir);
 }
 
 void cleanDownloads(std::string Dir)
