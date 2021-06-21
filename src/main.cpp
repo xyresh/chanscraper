@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
     stdDownload(argv[1]);
     cleanDownloads("$HOME/chanscrapes");
   }
-  
+  //thank you message, may add an ascii art to make it look good 
   printf("\nThank you for using Chanscraper!!\n\n");
   return 0;
 }
@@ -91,7 +91,9 @@ void argError(int argc,char *argv[])
 
   if(argc == 1)
   {
-     printf("invalid Arguments!\nUsage: chanscrapes <Thread URL> <directory of choice>");
+     //invalid argument error message
+     printf("invalid Arguments!\nUsage: chanscrapes <Thread URL> <directory of choice>\n");
      std::exit(69);
+     //error code is 69 lol
   }
 }
